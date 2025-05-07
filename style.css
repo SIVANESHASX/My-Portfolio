@@ -1,21 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Iansui&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* basics */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: pointer;
-    font-family: "Indie Flower", cursive;
-    font-weight: 500;
-    font-style: normal;
-    /* font-family: "Poppins", sans-serif;
+    color: var(--font-color);
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-style: normal; */
+    font-style: normal;
 }
 
 :root {
     --background-color: #EEEEEE;
-    --primary-color: #8E1616;
-    --secondary-color: #D84040;
-    --font-color: #1D1616;
+    --primary-color: #169976;
+    --secondary-color: #1DCD9F;
+    --font-color: #222222;
+    --gradient-color: #3b8eed;
+}
+
+/* Navbar */
+header {
+    position: relative;
+}
+
+.logo {
+    background: -webkit-linear-gradient(#169976, #3b8eed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.main-navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    justify-content: space-evenly;
+    margin-right: 3rem;
+}
+
+.nav-links a:hover {
+    border-bottom: 3px solid #169976;
+}
+
+/* Side Navbar */
+.menu-icon {
+    display: none;
+}
+
+.side-navbar {
+    display: none;
+    font-size: 1.2rem;
+    right: 0;
+    margin: 1rem;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+}
+.side-navbar ul {
+    display: block;
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.side-nav-links a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.side-nav-links a:hover{
+   color:#169976;
+}
+.side-nav-links {
+    padding: 1rem 0;
+}
+
+.cross-icon {
+    font-size: 1.5rem;
 }
