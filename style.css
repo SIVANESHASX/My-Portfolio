@@ -54,7 +54,9 @@ header {
 
 .nav-links a:hover {
     border-bottom: 3px solid #169976;
+    color: #169976;
 }
+
 
 /* Side Navbar */
 .menu-icon {
@@ -71,7 +73,14 @@ header {
     top: 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
 .side-navbar ul {
     display: block;
     list-style: none;
@@ -82,13 +91,76 @@ header {
     text-decoration: none;
     color: var(--font-color);
 }
-.side-nav-links a:hover{
-   color:#169976;
+
+.side-nav-links a:hover {
+    color: #169976;
 }
+
 .side-nav-links {
     padding: 1rem 0;
 }
 
 .cross-icon {
     font-size: 1.5rem;
+}
+
+/* herosection */
+.intro-container {
+    position: absolute;
+    z-index: -1;
+    top: 30%;
+    left: 10%;
+}
+
+.name {
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#169976, #3b8eed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+.role {
+    font-size: 2rem;
+}
+
+.btn-grp {
+    margin: 1rem 1rem 0 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.btn-grp button {
+    padding: .5rem 1.5rem;
+    background-color: #1DCD9F;
+    border-radius: 2px;
+}
+
+.btn-grp button:hover {
+    background-color: white;
+    color: #169976;
+    border: 1px solid #169976;
+}
+
+.btn-grp a {
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.connect-container {
+    margin: 3rem 0;
+    width: fit-content;
+}
+
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.profilepic1 {
+    position: absolute;
+    left: 50%;
 }
