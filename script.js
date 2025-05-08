@@ -9,3 +9,4 @@
     sideNav.style.display="none";
     mainIcon.style.display="block";
  }
+ 

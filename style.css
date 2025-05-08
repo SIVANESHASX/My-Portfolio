@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Iansui&family=Indie+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
 
 /* basics */
 * {
@@ -7,10 +7,16 @@
     box-sizing: border-box;
     cursor: pointer;
     color: var(--font-color);
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    font-family: "Italiana", sans-serif;
     font-weight: 400;
     font-style: normal;
+    scrollbar-width: none;
+    scroll-behavior:smooth;
 }
+
 
 :root {
     --background-color: #EEEEEE;
@@ -26,9 +32,6 @@ header {
 }
 
 .logo {
-    background: -webkit-linear-gradient(#169976, #3b8eed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     font-weight: 600;
     font-size: 1.3rem;
 }
@@ -37,25 +40,25 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .main-navbar ul {
     display: flex;
-    justify-content: space-evenly;
     list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
-    justify-content: space-evenly;
-    margin-right: 3rem;
+    margin-left: 3rem;
+    padding-bottom: 10px;
 }
 
 .nav-links a:hover {
-    border-bottom: 3px solid #169976;
-    color: #169976;
+    border-bottom: 2px solid black;
+
 }
+
 
 
 /* Side Navbar */
@@ -71,14 +74,7 @@ header {
     padding: .5rem 1rem;
     position: absolute;
     top: 0;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .side-navbar ul {
@@ -89,12 +85,8 @@ header {
 
 .side-nav-links a {
     text-decoration: none;
-    color: var(--font-color);
 }
 
-.side-nav-links a:hover {
-    color: #169976;
-}
 
 .side-nav-links {
     padding: 1rem 0;
@@ -105,62 +97,81 @@ header {
 }
 
 /* herosection */
-.intro-container {
-    position: absolute;
-    z-index: -1;
-    top: 30%;
-    left: 10%;
+.greeting {
+    margin: 1rem;
+    font-size: 2.5rem;
 }
 
 .name {
-    font-size: 2.5rem;
-    background: -webkit-linear-gradient(#169976, #3b8eed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: 600;
-}
-
-.role {
-    font-size: 2rem;
-}
-
-.btn-grp {
-    margin: 1rem 1rem 0 0;
+    font-size: 25rem;
     display: flex;
-    justify-content: space-between;
-
+    margin: 1rem;
+    z-index: -1;
+    animation: myname .5s ease-in 1;
 }
 
-.btn-grp button {
-    padding: .5rem 1.5rem;
-    background-color: #1DCD9F;
-    border-radius: 2px;
-}
-
-.btn-grp button:hover {
-    background-color: white;
-    color: #169976;
-    border: 1px solid #169976;
-}
-
-.btn-grp a {
-    text-decoration: none;
-    font-size: 1.1rem;
-}
-
-.connect-container {
-    margin: 3rem 0;
-    width: fit-content;
-}
-
-.links-container {
+.image-container {
     display: flex;
-    justify-content: space-between;
-    margin: 1rem 0;
-    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.profilepic1 {
+.profilepic {
+    width: 750px;
     position: absolute;
-    left: 50%;
+    top: 0%;
+    animation: profilepic 0.7s ease-out forwards;
+    overflow: hidden;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+
 }
+
+.quotes {
+    font-size: 1.3rem;
+    margin: -1rem 2rem;
+}
+
+@keyframes myname {
+    from {
+        transform: translatex(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes profilepic {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+#Works{
+    width: 100%;
+    margin-top: 10rem;
+    background-color: black;
+    padding: 3rem;
+}
+
+#Works div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Works h3{
+    font-size: 4rem;
+    color: var(--background-color);
+}
+
+
+  
