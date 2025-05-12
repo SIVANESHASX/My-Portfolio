@@ -1,0 +1,78 @@
+/* Basic Setups */
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Italiana", sans-serif;
+    color: var(--font-color);
+    background-color: var(--background-color);
+
+}
+
+:root {
+    --primary-color: #929AAB;
+    --secondary-color: #EEEEEE;
+    --font-color: #393E46;
+    --background-color: #F7F7F7;
+}
+
+/* Navbar Things */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-links {
+    margin-left: 4rem;
+    font-size: 1.3rem;
+}
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+.nav-links a:hover {
+    border-bottom: 2px solid var(--font-color);
+}
+.logo {
+    font-weight: 600;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* SideNavbar Things */
+.side-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+    display: none;
+}
+
+.side-nav ul {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    list-style: none;
+    padding-right: 3rem;
+}
+
+.side-nav-links {
+    margin-bottom: 2.5rem;
+}

@@ -5,10 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaquery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
 <body>
-    
-</body>
-<script src="./script.js"></script>
+    <header>
+        <nav class="navbar">
+            <p class="logo">Portfolio</p>
+            <ul>
+                <li class="nav-links"><a href="#home">Home</a></li>
+                <li class="nav-links"><a href="#works">Works</a></li>
+                <li class="nav-links"><a href="#about">About me</a></li>
+                <li class="nav-links"><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-icon" onclick="showSideNav()"><i class="fa-solid fa-bars"></i></div>
+        </nav>
+    </header>
+    <nav class="side-nav">
+        <ul>
+            <li class="side-nav-links"><a href="#home">Home</a></li>
+            <li class="side-nav-links"><a href="#works">Works</a></li>
+            <li class="side-nav-links"><a href="#about">About me</a></li>
+            <li class="side-nav-links"><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="cross-icon" onclick="hideSideNav()"><i class="fa-solid fa-xmark"></i></div>
+    </nav>
+    <script src="./script.js"></script>
+</body> 
 </html>
