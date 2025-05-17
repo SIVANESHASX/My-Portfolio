@@ -9,6 +9,7 @@
     font-family: "Italiana", sans-serif;
     color: var(--font-color);
     background-color: var(--background-color);
+    scrollbar-width: none;
 
 }
 
@@ -26,6 +27,7 @@
     padding: 1.5rem 3rem;
     position: relative;
     font-size: 1.5rem;
+    z-index: 2;
 }
 
 .navbar ul {
@@ -38,13 +40,16 @@
     margin-left: 4rem;
     font-size: 1.3rem;
 }
+
 a {
     text-decoration: none;
     color: var(--font-color);
 }
+
 .nav-links a:hover {
     border-bottom: 2px solid var(--font-color);
 }
+
 .logo {
     font-weight: 600;
 }
@@ -63,6 +68,9 @@ a {
     flex-direction: row;
     padding: 1rem;
     display: none;
+    z-index: 2;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .side-nav ul {
@@ -71,8 +79,63 @@ a {
     flex-direction: column;
     list-style: none;
     padding-right: 3rem;
+    background: transparent;
 }
 
 .side-nav-links {
     margin-bottom: 2.5rem;
+    background: transparent;
+}
+.side-nav-links a{
+     background: transparent;
+}
+
+/* hero section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    font-size: 27vw;
+    animation: slideFromLeft 0.4s ease-out forwards;
+}
+
+.profile-container img {
+    background: transparent;
+    display: flex;
+    width: 750px;
+    margin-top: -80px;
+    z-index: 1;
+    animation: profilepicanimation 0.4s ease-out forwards;
+    mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #000 70%, transparent 100%);
+}
+
+.subheading {
+    position: absolute;
+    bottom: 0;
+}
+/* All animations */
+@keyframes slideFromLeft {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+}
+}
+@keyframes profilepicanimation{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./mediaquery.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio</title>
 </head>
+
 <body>
-    <header>
+    <header id="home">
         <nav class="navbar">
             <p class="logo">Portfolio</p>
             <ul>
@@ -28,8 +32,15 @@
             <li class="side-nav-links"><a href="#about">About me</a></li>
             <li class="side-nav-links"><a href="#contact">Contact</a></li>
         </ul>
-        <div class="cross-icon" onclick="hideSideNav()"><i class="fa-solid fa-xmark"></i></div>
+        <div class="cross-icon" onclick="hideSideNav()" style="background-color: transparent;"><i class="fa-solid fa-xmark"></i></div>
     </nav>
+    <section class="main">
+        <div class="profile-container">
+            <img src="./assests/ProfilePicBW.png" alt="Profile Picture" class="profile-pic" />
+            <div class="name"><p>Sivanesh</p></div>
+        </div>
+    </section>
     <script src="./script.js"></script>
-</body> 
+</body>
+
 </html>
