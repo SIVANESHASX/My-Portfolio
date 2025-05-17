@@ -98,13 +98,20 @@ a {
     position: relative;
 }
 
-.name {
+.name-container {
     position: absolute;
     display: flex;
-    font-size: 27vw;
+    flex-direction: column;
+    /* padding: 0rem 2rem; */
     animation: slideFromLeft 0.4s ease-out forwards;
 }
-
+.name{
+    font-size: 27vw;
+}
+.subhead{
+    font-size: 2vw;
+    margin-left: 1rem;
+}
 .profile-container img {
     background: transparent;
     display: flex;
